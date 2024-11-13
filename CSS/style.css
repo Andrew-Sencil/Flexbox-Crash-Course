@@ -1,0 +1,82 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container
+{
+    /* height: 500px;
+    flex-direction: column; */
+    /* height: 400px; */
+    display: flex; 
+    background-color: #f4f4f4;
+    /* Always is on the y axis
+    justify-content: center; */
+    /* Always on the x axis
+    align-items: center; */
+
+    /* flex-wrap: wrap; */
+}
+
+/* .flex-container::after
+{
+    content: '';
+    clear: both;
+    display: block;
+} */
+
+.item
+{
+    /* The flex is composed of property growth, shrink, and basis */
+    flex: 1 0 100px;
+    /* flex-basis: 300px; */
+    width: 100px;
+    height: 100px;
+    background: #254de4;
+    color: white;
+    margin: 10px;
+
+    display: flex;
+    /* x axis */
+    align-items: center;
+    /* y axis */
+    justify-content: center;
+
+    /* flex-grow: 1; */
+}
+
+/* This selects the element 1 by 1 */
+ .item:nth-child(1)
+{
+/* This is used to reorder the things    
+    order: 3; */
+    /* flex-grow:3; */
+    /* flex-basis: 200px; */
+    /* align-self: flex-start; */
+    /* flex-shrink: 1; */
+}
+
+.item:nth-child(2)
+{
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    /* Is used for setting the initial size of the item
+    flex-basis: 200px; */
+    /* order: 1; */
+    /* align-self: center; */
+}
+
+.item:nth-child(3)
+{
+    /* flex-shrink: 3; */
+    /* order: 2; */
+    /* align-self: flex-end; */
+    /* flex-grow: 2; */
+} 

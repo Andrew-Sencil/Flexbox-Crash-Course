@@ -1,0 +1,25 @@
+FlexBox notes
+
+•Flexible Box Model is a one dimensional layout model that provides a method to offer space distribution and powerful alignment capabilities.
+
+-Before Flexbox, we aligned elements using floats and tables. Flexbox has made life mush easier for people that use CSS.
+-CSS Grid is another option for alignment, positioning, etc. It's good to learn both.
+-The flex container is the element that holds flex items. Flex items are direct children of flex containers. A container is created with display: flex
+
+Ex:
+<div>
+	<div>Flex Item 1</div>
+	<div>Flex Item 2</div>
+	<img src="pic.png" alt="also a flex item"/>
+</div>
+
+Flex Container Properties			Flex Item Properties
+- flex-direction	- flex-wrap		- order		- flex-grow
+- flex-flow		- justify-content	- flex-shrink	- flex-basis
+- align-items		- align-content		- align-self
+
+x-axis:
+align-items //property
+
+y-axis:
+justify-content //property
